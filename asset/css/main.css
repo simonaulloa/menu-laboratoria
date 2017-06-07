@@ -6,7 +6,7 @@
 	font-family: 'Lobster', cursive;
 	background-color: #4b3984;
 	width: 100%;
-	padding: 20px;
+	padding: 40px;
 	color: whitesmoke;
 
 	display: flex;
@@ -16,13 +16,14 @@
 }
 a{
 	cursor: pointer; /*cambia cursor*/
-	padding: 20px;
+	padding: 40px;
 	border-left: 2px solid #303030;
+	transition: background-color 3s ease-out;
 }
 a:hover { /*nav encima*/
   background-color: #7f78a3;
-  color: whitesmoke;
-  padding: 20px;
+  color: #ffe8af;
+  padding: 40px;
   }
   a:first-child { /* le quito la primera rayita al menu*/
     border-left: none;
@@ -31,8 +32,23 @@ a:hover { /*nav encima*/
 /*responsive*/
 @media (min-width: 10px) and (max-width: 1000px){
 	.contenedor{
+		font-family:'Quicksand', sans-serif;;
+		background-color: #437d96;
 		width: 100%;
-		background-color: #3167a0;
-		font-family: 'Quicksand', sans-serif;
+		color: whitesmoke;
+		text-align: center;
+		
+		display: block;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	a{
+		cursor: pointer; /*cambia cursor*/
+		transition: background-color 3s ease-out;
+	}
+	a:hover { /*nav encima*/
+	    background-color: #7f78a3;
+	    color: #e0feff;
+	  }
 	}
 }
