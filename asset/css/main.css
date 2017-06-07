@@ -1,1 +1,38 @@
-main.css
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+.contenedor{
+	font-family: 'Lobster', cursive;
+	background-color: #4b3984;
+	width: 100%;
+	padding: 20px;
+	color: whitesmoke;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+a{
+	cursor: pointer; /*cambia cursor*/
+	padding: 20px;
+	border-left: 2px solid #303030;
+}
+a:hover { /*nav encima*/
+  background-color: #7f78a3;
+  color: whitesmoke;
+  padding: 20px;
+  }
+  a:first-child { /* le quito la primera rayita al menu*/
+    border-left: none;
+}
+
+/*responsive*/
+@media (min-width: 10px) and (max-width: 1000px){
+	.contenedor{
+		width: 100%;
+		background-color: #3167a0;
+		font-family: 'Quicksand', sans-serif;
+	}
+}
